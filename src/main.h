@@ -53,8 +53,8 @@ static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20
 // Maximum number of script-checking threads allowed
 static const int MAX_SCRIPTCHECK_THREADS = 16;
 
-static const uint256 hashGenesisBlock("");
-static const uint256 hashGenesisBlockTestNet("");
+static const uint256 hashGenesisBlock("0x00000721c326acd3ea5ba18d7c974de304b683a2137e23e059be7c5b503c3450");
+static const uint256 hashGenesisBlockTestNet("0x00004864e529d7bd47c8e944029fa1c31738001b79248dd9452a19097833e95c");
 
 inline int64_t PastDrift(int64_t nTime)   { return nTime - ((2 * 3 + 10) * 60); } // up to this from the past
 inline int64_t FutureDrift(int64_t nTime) { return nTime + 5 * 60; } // up to 5 mins from the future
