@@ -114,7 +114,7 @@
     <ClCompile Include="..\..\src\qt\monitoreddatamapper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="myBitglobalcoinqt_plugin_import.cpp">
+    <ClCompile Include="mySficoinqt_plugin_import.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\qt\notificator.cpp">
@@ -657,10 +657,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\MyProjects\Bitglobalcoin\src\qt\locale\bitcoin_en.ts">
+    <None Include="C:\MyProjects\Sficoin\src\qt\locale\bitcoin_en.ts">
       <Filter>Translation Files</Filter>
     </None>
-    <None Include="C:\MyProjects\Bitglobalcoin\src\qt\locale\bitcoin_ru.ts">
+    <None Include="C:\MyProjects\Sficoin\src\qt\locale\bitcoin_ru.ts">
       <Filter>Translation Files</Filter>
     </None>
     <None Include="..\..\src\qt\res\icons\bitcoin.icns">
@@ -802,10 +802,10 @@
     <None Include="..\..\src\qt\res\icons\mining_inactive.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="..\..\src\qt\res\icons\Bitglobalcoin-128.png">
+    <None Include="..\..\src\qt\res\icons\Sficoin-128.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="..\..\src\qt\res\icons\Bitglobalcoin-16.png">
+    <None Include="..\..\src\qt\res\icons\Sficoin-16.png">
       <Filter>Resource Files</Filter>
     </None>
     <None Include="..\..\src\qt\res\icons\overview.png">
@@ -855,7 +855,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="C:\MyProjects\Bitglobalcoin\MSVC\myBitglobalcoinqt\myBixCqt_resource.rc" />
+    <ResourceCompile Include="C:\MyProjects\Sficoin\MSVC\mySficoinqt\myBixCqt_resource.rc" />
     <ResourceCompile Include="icon.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
@@ -867,19 +867,19 @@
     <Image Include="..\..\src\qt\res\icons\notsynced.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="..\..\src\qt\res\icons\Bitglobalcoin.ico">
+    <Image Include="..\..\src\qt\res\icons\Sficoin.ico">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="..\..\src\qt\res\icons\Bitglobalcoin.png">
+    <Image Include="..\..\src\qt\res\icons\Sficoin.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="..\..\src\qt\res\icons\Bitglobalcoin-32.png">
+    <Image Include="..\..\src\qt\res\icons\Sficoin-32.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="..\..\src\qt\res\icons\Bitglobalcoin-48.png">
+    <Image Include="..\..\src\qt\res\icons\Sficoin-48.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="..\..\src\qt\res\icons\Bitglobalcoin-80.png">
+    <Image Include="..\..\src\qt\res\icons\Sficoin-80.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
