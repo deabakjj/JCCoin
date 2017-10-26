@@ -1,5 +1,5 @@
-Bitglobalcoin-qt usr/bin
-share/pixmaps/Bitglobalcoin32.xpm usr/share/pixmaps
-share/pixmaps/Bitglobalcoin80.xpm usr/share/pixmaps
-debian/Bitglobalcoin-qt.desktop usr/share/applications
-debian/Bitglobalcoin-qt.protocol usr/share/kde4/services/
+Sficoin-qt usr/bin
+share/pixmaps/Sficoin32.xpm usr/share/pixmaps
+share/pixmaps/Sficoin80.xpm usr/share/pixmaps
+debian/Sficoin-qt.desktop usr/share/applications
+debian/Sficoin-qt.protocol usr/share/kde4/services/

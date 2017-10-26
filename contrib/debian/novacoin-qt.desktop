@@ -1,13 +1,13 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Bitglobalcoin
-Comment=Bitglobalcoin P2P Cryptocurrency
-Comment[ru]=Bitglobalcoin, P2P криптовалюта
-Comment[fr]=Bitglobalcoin, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Bitglobalcoin, eşten eşe kriptografik sanal para birimi
-Exec=/usr/bin/Bitglobalcoin-qt
+Name=Sficoin
+Comment=Sficoin P2P Cryptocurrency
+Comment[ru]=Sficoin, P2P криптовалюта
+Comment[fr]=Sficoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Sficoin, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/Sficoin-qt
 Terminal=false
 Type=Application
-Icon=/usr/share/pixmaps/Bitglobalcoin80.xpm
-MimeType=x-scheme-handler/Bitglobalcoin;
+Icon=/usr/share/pixmaps/Sficoin80.xpm
+MimeType=x-scheme-handler/Sficoin;
 Categories=Office;

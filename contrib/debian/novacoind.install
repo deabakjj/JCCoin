@@ -1,2 +1,2 @@
-debian/bin/Bitglobalcoind usr/bin
-src/Bitglobalcoind usr/lib/Bitglobalcoin
+debian/bin/Sficoind usr/bin
+src/Sficoind usr/lib/Sficoin

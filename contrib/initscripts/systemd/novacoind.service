@@ -1,11 +1,11 @@
 [Unit]
-Description=Bitglobalcoin daemon serivce
+Description=Sficoin daemon serivce
 After=network.target
 
 [Service]
 Type=simple
-User=Bitglobalcoin
-ExecStart=/opt/Bitglobalcoin/Bitglobalcoind
+User=Sficoin
+ExecStart=/opt/Sficoin/Sficoind
 
 [Install]
 WantedBy=multi-user.target

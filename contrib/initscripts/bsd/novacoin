@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# PROVIDE: Bitglobalcoin
+# PROVIDE: Sficoin
 # REQUIRE: LOGIN
 # KEYWORD: shutdown
 
@@ -8,46 +8,46 @@
 # Add the following lines to /etc/rc.conf.local or /etc/rc.conf
 # to enable this service:
 #
-# BixC_enable (bool): Set to NO by default. Set this variable to YES if you want to enable Bitglobalcoin service.
-# BixC_config (path): Set to /usr/local/etc/Bitglobalcoin.conf by default.
-# BixC_user:  The user account Bitglobalcoin daemon runs as. It uses 'root' user by default.
-# BixC_group: The group account Bitglobalcoin daemon runs as. It uses 'wheel' group by default.
-# BixC_datadir (str): Default to "/var/db/Bitglobalcoin". Base data directory.
+# Sficoin_enable (bool): Set to NO by default. Set this variable to YES if you want to enable Sficoin service.
+# Sficoin_config (path): Set to /usr/local/etc/Sficoin.conf by default.
+# Sficoin_user:  The user account Sficoin daemon runs as. It uses 'root' user by default.
+# Sficoin_group: The group account Sficoin daemon runs as. It uses 'wheel' group by default.
+# Sficoin_datadir (str): Default to "/var/db/Sficoin". Base data directory.
 
 . /etc/rc.subr
 
-name=Bitglobalcoin
-rcvar=BixC_enable
+name=Sficoin
+rcvar=Sficoin_enable
 
-: ${BixC_enable:=NO}
-: ${BixC_config=/usr/local/etc/Bitglobalcoin.conf}
-: ${BixC_datadir=/var/db/Bitglobalcoin}
-: ${BixC_user="root"}
-: ${BixC_group="wheel"}
+: ${Sficoin_enable:=NO}
+: ${Sficoin_config=/usr/local/etc/Sficoin.conf}
+: ${Sficoin_datadir=/var/db/Sficoin}
+: ${Sficoin_user="root"}
+: ${Sficoin_group="wheel"}
 
-required_files=${BixC_config}
-command=/usr/local/bin/BixCd
-BixC_chdir=${BixC_datadir}
-pidfile="${BixC_datadir}/BixCd.pid"
-stop_cmd=BixC_stop
-command_args="-conf=${BixC_config} -datadir=${BixC_datadir} -daemon -pid=${pidfile}"
+required_files=${Sficoin_config}
+command=/usr/local/bin/Sficoind
+Sficoin_chdir=${Sficoin_datadir}
+pidfile="${Sficoin_datadir}/Sficoind.pid"
+stop_cmd=Sficoin_stop
+command_args="-conf=${Sficoin_config} -datadir=${Sficoin_datadir} -daemon -pid=${pidfile}"
 start_precmd="${name}_prestart"
 
-BixC_create_datadir()
+Sficoin_create_datadir()
 {
 	echo "Creating data directory"
-	eval mkdir -p ${BixC_datadir}
-	[ $? -eq 0 ] && chown -R ${BixC_user}:${BixC_group} ${BixC_datadir}
+	eval mkdir -p ${Sficoin_datadir}
+	[ $? -eq 0 ] && chown -R ${Sficoin_user}:${Sficoin_group} ${Sficoin_datadir}
 }
 
-BixC_prestart()
+Sficoin_prestart()
 {
-	if [ ! -d "${BixC_datadir}/." ]; then
-		BixC_create_datadir || return 1
+	if [ ! -d "${Sficoin_datadir}/." ]; then
+		Sficoin_create_datadir || return 1
 	fi
 }
 
-BixC_requirepidfile()
+Sficoin_requirepidfile()
 {
 	if [ ! "0`check_pidfile ${pidfile} ${command}`" -gt 1 ]; then
 		echo "${name} not running? (check $pidfile)."
@@ -55,12 +55,12 @@ BixC_requirepidfile()
 	fi
 }
 
-BixC_stop()
+Sficoin_stop()
 {
-    BixC_requirepidfile
+    Sficoin_requirepidfile
 
 	echo "Stopping ${name}."
-	eval ${command} -conf=${BixC_config} -datadir=${BixC_datadir} stop
+	eval ${command} -conf=${Sficoin_config} -datadir=${Sficoin_datadir} stop
 	wait_for_pids ${rc_pid}
 }
 

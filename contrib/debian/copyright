@@ -1,11 +1,11 @@
 Format: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?rev=174
-Upstream-Name: Bitglobalcoin
+Upstream-Name: Sficoin
 Upstream-Contact: Alex D. <balthazar.ad@gmail.com>
-Source: http://sourceforge.net/projects/Bitglobalcoin/files/
- https://github.com/Bitglobalcoin-project/Bitglobalcoin
+Source: http://sourceforge.net/projects/Sficoin/files/
+ https://github.com/Sficoin-project/Sficoin
 
 Files: *
-Copyright: 2012-2015, Bitglobalcoin Developers
+Copyright: 2012-2015, Sficoin Developers
 License: Expat
 
 Files: *

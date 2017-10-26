@@ -1,6 +1,6 @@
 [Protocol]
-exec=Bitglobalcoin-qt '%u'
-protocol=Bitglobalcoin
+exec=Sficoin-qt '%u'
+protocol=Sficoin
 input=none
 output=none
 helper=true
