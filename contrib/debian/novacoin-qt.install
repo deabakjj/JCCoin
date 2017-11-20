@@ -1,5 +1,0 @@
-Sficoin-qt usr/bin
-share/pixmaps/Sficoin32.xpm usr/share/pixmaps
-share/pixmaps/Sficoin80.xpm usr/share/pixmaps
-debian/Sficoin-qt.desktop usr/share/applications
-debian/Sficoin-qt.protocol usr/share/kde4/services/
